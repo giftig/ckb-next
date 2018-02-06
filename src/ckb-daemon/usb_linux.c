@@ -327,7 +327,7 @@ void* os_inputmain(void* context){
                 case 10:
                 case 11:
                     // HID mouse input
-                    hid_mouse_translate(kb->input.keys, &kb->input.rel_x, &kb->input.rel_y, -urbendpoint, urb->actual_length, urb->buffer, kb->fwversion);
+                    hid_mouse_translate(kb->input.keys, &kb->input.rel_x, &kb->input.rel_y, -urbendpoint, urb->actual_length, urb->buffer, kb);
                     break;
                 case MSG_SIZE:
                     // Corsair mouse input
